@@ -75,8 +75,9 @@ header img {
   justify-content: center;
   align-items: center;
   background-color: #9DC20A;
-  width: 500px;
-  height: 350px;
+  width: 90%;
+  max-width: 500px;
+  min-height: 20rem;
   margin-left: 100px;
   position: relative;
   top: 125px;
