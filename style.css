@@ -243,8 +243,10 @@ header img {
 
 .recommend h2 {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: rgba(0, 0, 0, 0.751);
+  line-height: 1.5;
+  text-align: center;
 }
 
 .recommend img {
