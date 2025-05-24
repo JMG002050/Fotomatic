@@ -1,0 +1,248 @@
+/* === UNIVERSAL === */
+* {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+
+/* === HEADER SECTION === */
+header {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: 'Roboto Flex', sans-serif;
+  margin-left: 15px;
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+}
+
+header li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+
+/* === HERO SECTION === */
+.sign-up {
+  background-image:  url("./resources/images/banner-landingpage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.green-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #9DC20A;
+  width: 500px;
+  height: 350px;
+  margin-left: 100px;
+  position: relative;
+  top: 125px;
+  color: white;
+  text-align: center;
+}
+
+.green-box h2 {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.green-box h1 {
+  font-size: 2rem;
+}
+
+.green-box p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.green-box p strong {
+  font-size: inherit;
+  font-weight: 700;
+}
+  
+
+.cta-button{
+    padding: 10px;
+    background-color: black;
+    width: 50%;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+
+/* WE OFFER SECTION */
+.we-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    gap: 90px;
+
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hand, .camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+    background-color: rgba(255, 255, 255, 0.774);
+
+    max-width: 550px;
+    flex: 1;
+    padding: 40px 0px;
+    height: 500px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hand img, .camera img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hand h2, .camera h2 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.776);
+    text-align: center;
+}
+
+.hand p, .camera p {
+    text-align: center;
+    width: 80%;
+}
+
+
+/* FILTERS SECTION */
+.filters {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    /* border: 2px solid red; */
+}
+
+.filter-text {
+    background-color: #9DC20A;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.filter-text h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.filter-text p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 100%;
+    gap: 10px;
+    padding: 30px;
+    justify-items: center;
+    background-color: black;
+}
+
+.showcase img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* RECOMMENDATION SECTION */
+.recommend {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.recommend h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.751);
+}
+
+
+.recommend img {
+    height: 25%;
+    width: auto;
+}
+
+
+/* FOOTER */
+
+.copyright {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
