@@ -1,18 +1,26 @@
 /* === UNIVERSAL === */
 * {
-  font-family: 'Roboto Flex', sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+
+body {
+  font-size: 1.6rem;         
+  line-height: 1.5;          
   font-family: 'Roboto Flex', sans-serif;
 }
 
+img {
+  max-width: 100%;          
+  height: auto;              
+}
 
 /* === HEADER SECTION === */
 header {
@@ -23,6 +31,7 @@ header {
 }
 
 header nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -237,4 +246,35 @@ header img {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+
+
+/* ===MOBILE MEDIA QUERY === */
+@media (max-width: 480px) {
+  /* === UNIVERSAL === */
+  body {
+    padding: 0;
+  }
+
+  section {
+    padding-inline: 0;
+  }
+
+  /* === HEADER SECTION === */
+
+
+
+ 
+
+  .sign-up {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .green-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
