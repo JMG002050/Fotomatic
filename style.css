@@ -250,7 +250,7 @@ header img {
 
 
 /* ===MOBILE MEDIA QUERY === */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   /* === UNIVERSAL === */
   body {
     padding: 0;
@@ -260,7 +260,9 @@ header img {
     padding-inline: 0;
   }
 
+
   /* === HEADER SECTION === */
+  .
 
 
 
