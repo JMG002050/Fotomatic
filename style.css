@@ -27,7 +27,7 @@ header {
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 1.25rem 0; /* Keep vertical spacing clean */
+  padding: 1.25rem 0; 
   margin: 0;
 }
 
@@ -67,7 +67,7 @@ header li a {
 
   display: flex;
   align-items: center;
-  gap: 0.6rem; /* smaller gap looks tighter */
+  gap: 0.6rem; 
 }
 
 header li a::after {
@@ -87,7 +87,7 @@ header li a:hover::after {
 
 header li a img {
   vertical-align: middle;
-  height: 1.5rem; /* or keep your current 25px if preferred */
+  height: 1.5rem; 
   margin-right: 0.5rem;
   padding: 0;
 }
@@ -96,7 +96,7 @@ header li a img {
 /* === HERO SECTION === */
 .sign-up {
   margin: 0;
-  padding: 2rem 0; /* Added top/bottom space */
+  padding: 2rem 0; 
   background-image: url("./resources/images/banner-landingpage.jpg");
   background-size: cover;
   background-position: center;
@@ -121,7 +121,6 @@ header li a img {
   color: white;
   text-align: center;
 }
-
 
 .green-box h2 {
   font-size: 2rem;
@@ -196,7 +195,6 @@ header li a img {
   border-radius: 1rem;
 }
 
-/* NEW: Card text wrap */
 .card-text {
   display: flex;
   flex-direction: column;
@@ -260,7 +258,7 @@ header li a img {
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   width: 100%;
   gap: 1.5rem;
-  padding: 2rem 4rem;
+  padding: 2rem 1rem;
   justify-items: center;
   background-color: black;
 }
@@ -270,6 +268,12 @@ header li a img {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+}
+
+.showcase img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 
@@ -311,11 +315,12 @@ header li a img {
   font-size: 0.8rem;
 }
 
+
+
 /* === OUTSIDE MOBILE CSS HIDDEN === */
 .mobile-nav {
   display: none;
 }
-
 
 
 
@@ -351,21 +356,30 @@ header li a img {
   }
 
   .mobile-nav button {
-    padding: 10px 40px;
+    padding: 0.6rem 1.5rem;
     background-color: #9DC20A;
     color: white;
-    font-size: 1.25rem;
-    border-radius: 10px;
-    border-color: aliceblue;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .mobile-nav button:hover {
+    background-color: #85b709;
+    transform: scale(1.05);
     cursor: pointer;
   }
 
   .mobile-nav img:hover {
-  filter: brightness(0) saturate(100%) invert(67%) sepia(83%) saturate(691%) hue-rotate(33deg) brightness(96%) contrast(98%);
-  transition: filter 0.1s ease-in-out;
-  cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(83%) saturate(691%) hue-rotate(33deg) brightness(96%) contrast(98%);
+    transition: filter 0.1s ease-in-out;
+    cursor: pointer;
   }
 
+  /* === HERO SECTION === */
   .sign-up {
     padding: 0;
     margin: 0;
@@ -377,5 +391,11 @@ header li a img {
     padding: 1.5rem;
     margin: 2rem auto;
     width: 90%;
+  }
+
+  /* === FILTERS SECTION === */
+  .showcase {
+    padding: 1.5rem 1rem;
+    grid-template-columns: 1fr; 
   }
 }
