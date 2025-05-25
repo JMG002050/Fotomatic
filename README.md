@@ -13,7 +13,7 @@ Built with **HTML** and **CSS**, this project is fully mobile-friendly and adapt
 
 ## 💻 Live Demo
 
-👉 [Click here to view the live site](https://your-username.github.io/Fotomatic/)  
+👉 [Click here to view the live site](https://jmg002050.github.io/Fotomatic/)  
 _(Replace with your actual GitHub Pages link)_
 
 ## 🛠️ Tech Stack
@@ -30,10 +30,6 @@ _(Replace with your actual GitHub Pages link)_
 - Designing clean navigation for multiple viewports
 - Writing DRY, organized CSS for real-world projects
 
-## 🖼️ Screenshot
-
-_Add a screenshot here once deployed — optional but makes your portfolio pop_
-
 ## 📂 Folder Structure
 /Fotomatic
 │
@@ -42,3 +38,10 @@ _Add a screenshot here once deployed — optional but makes your portfolio pop_
 └── /resources
   └── /images
   └── /design
+
+## 📢 Author
+
+**Jorge Martinez**  
+📍 Austin, Texas  
+📧 jorge1austin1@gmail.com  
+🐙 [GitHub Profile](https://github.com/JMG002050)
