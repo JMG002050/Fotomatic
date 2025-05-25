@@ -24,7 +24,6 @@ img {
 
 /* === HEADER SECTION === */
 header {
-  text-decoration: none;
   color: white;
   background-color: black;
   padding: 1.25rem 0; 
@@ -88,7 +87,7 @@ header li a:hover::after {
 header li a img {
   vertical-align: middle;
   height: 1.5rem; 
-  margin-right: 0.5rem;
+  margin-right: 0.9rem;
   padding: 0;
 }
 
@@ -396,6 +395,15 @@ header li a img {
   /* === FILTERS SECTION === */
   .showcase {
     padding: 1.5rem 1rem;
-    grid-template-columns: 1fr; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .showcase img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
   }
 }
