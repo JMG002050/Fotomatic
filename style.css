@@ -10,7 +10,6 @@ a {
   color: white;
 }
 
-
 body {
   font-size: 1.6rem;         
   line-height: 1.5;          
@@ -22,12 +21,14 @@ img {
   height: auto;              
 }
 
+
 /* === HEADER SECTION === */
 header {
-  padding: 20px;
   text-decoration: none;
   color: white;
   background-color: black;
+  padding: 1.25rem 0; /* Keep vertical spacing clean */
+  margin: 0;
 }
 
 header nav {
@@ -53,46 +54,74 @@ header li {
   list-style: none;
   font-size: 16px;
   line-height: 1.6;
-}
-
-header li a {
-  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-header img {
-  height: 25px;
-  margin-right: 10px;
+header li a {
+  position: relative;
+  color: white;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem; /* smaller gap looks tighter */
+}
+
+header li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #9DC20A;
+  transition: width 0.3s ease-in-out;
+}
+
+header li a:hover::after {
+  width: 100%;
+}
+
+header li a img {
+  vertical-align: middle;
+  height: 1.5rem; /* or keep your current 25px if preferred */
+  margin-right: 0.5rem;
+  padding: 0;
 }
 
 
 /* === HERO SECTION === */
 .sign-up {
-  background-image:  url("./resources/images/banner-landingpage.jpg");
+  margin: 0;
+  padding: 2rem 0; /* Added top/bottom space */
+  background-image: url("./resources/images/banner-landingpage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .green-box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
   background-color: #9DC20A;
   width: 90%;
   max-width: 500px;
   min-height: 20rem;
-  margin-left: 100px;
-  position: relative;
-  top: 125px;
+  margin-left: 3rem;
+  padding: 2rem;
   color: white;
   text-align: center;
 }
+
 
 .green-box h2 {
   font-size: 2rem;
@@ -116,12 +145,26 @@ header img {
   font-weight: 700;
 }
   
-.cta-button{
-  padding: 10px;
+.cta-button {
+  padding: 0.75rem 1.5rem;
   background-color: black;
-  width: 50%;
-  margin: 15px auto;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #9DC20A;
   border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.cta-button:hover {
+  background-color: rgba(255, 255, 255, 0.77);
+  color: black;
+  border-color: black;
+  transform: scale(1.03);
 }
 
 
@@ -313,6 +356,14 @@ header img {
     color: white;
     font-size: 1.25rem;
     border-radius: 10px;
+    border-color: aliceblue;
+    cursor: pointer;
+  }
+
+  .mobile-nav img:hover {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(83%) saturate(691%) hue-rotate(33deg) brightness(96%) contrast(98%);
+  transition: filter 0.1s ease-in-out;
+  cursor: pointer;
   }
 
   .sign-up {
@@ -322,8 +373,9 @@ header img {
   }
 
   .green-box {
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    padding: 1.5rem;
+    margin: 2rem auto;
     width: 90%;
   }
 }
