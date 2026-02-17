@@ -14,7 +14,10 @@ Built with **HTML** and **CSS**, this project is fully mobile-friendly and adapt
 ## 💻 Live Demo
 
 👉 [Click here to view the live site](https://jmg002050.github.io/Fotomatic/)  
-_(Replace with your actual GitHub Pages link)_
+---
+
+## Preview
+![Home Page Hero Section](resources/Preview.jpeg)
 
 ## 🛠️ Tech Stack
 
